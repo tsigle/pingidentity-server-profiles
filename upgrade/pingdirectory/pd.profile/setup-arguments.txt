@@ -10,7 +10,7 @@
   --maxHeapSize ${MAX_HEAP_SIZE} \
   --jvmTuningParameter AGGRESSIVE \
   --usePkcs12Keystore /opt/staging/instance/config/keystore.p12 \
-  --keyStorePasswordFile /opt/staging/instance/config/keystore.pin \ 
+  --keyStorePasswordFile /opt/staging/instance/config/keystore.pin \
   --certNickname ping \
   --rootUserDN "cn=administrator" \
   --rootUserPasswordFile "/opt/staging/.sec/root-user-password" \
