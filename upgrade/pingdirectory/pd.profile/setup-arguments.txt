@@ -1,0 +1,19 @@
+--verbose \
+  --acceptLicense \
+  --skipPortCheck \
+  --instanceName ${HOSTNAME}.pingdirectory \
+  --location Docker \
+  --ldapPort 389 \
+  --ldapsPort 636 \
+  --httpsPort 443 \
+  --enableStartTLS \
+  --maxHeapSize 768m \
+  --jvmTuningParameter AGGRESSIVE \
+  --usePkcs12Keystore /opt/out/instance/config/keystore.p12\
+  --keyStorePasswordFile /opt/out/instance/config/keystore.pin\
+  --certNickname ping \
+  --rootUserDN "cn=administrator" \
+  --rootUserPasswordFile "/opt/staging/.sec/root-user-password" \
+  --encryptDataWithPassphraseFromFile /opt/staging/.sec/encryption-password   \
+  --baseDN "dc=example,dc=com"   \
+  --addBaseEntry
