@@ -1,13 +1,13 @@
 --verbose \
   --acceptLicense \
   --skipPortCheck \
-  --instanceName ${HOSTNAME}.pingdirectory \
+  --instanceName ${HOSTNAME} \
   --location Docker \
   --ldapPort 389 \
   --ldapsPort 636 \
   --httpsPort 443 \
   --enableStartTLS \
-  --maxHeapSize 768m \
+  --maxHeapSize ${MAX_HEAP_SIZE} \
   --jvmTuningParameter AGGRESSIVE \
   --usePkcs12Keystore /opt/out/instance/config/keystore.p12\
   --keyStorePasswordFile /opt/out/instance/config/keystore.pin\
