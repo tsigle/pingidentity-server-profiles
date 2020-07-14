@@ -1,7 +1,7 @@
 --verbose \
   --acceptLicense \
   --skipPortCheck \
-  --instanceName ${HOSTNAME} \
+  --instanceName ${INSTANCE_NAME} \
   --location Docker \
   --ldapPort 389 \
   --ldapsPort 636 \
