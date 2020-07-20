@@ -3,9 +3,9 @@
   --skipPortCheck \
   --instanceName ${INSTANCE_NAME} \
   --location Docker \
-  --ldapPort 389 \
-  --ldapsPort 636 \
-  --httpsPort 443 \
+  --ldapPort ${LDAP_PORT} \
+  --ldapsPort ${LDAPS_PORT} \
+  --httpsPort ${HTTPS_PORT} \
   --enableStartTLS \
   --maxHeapSize ${MAX_HEAP_SIZE} \
   --jvmTuningParameter AGGRESSIVE \
